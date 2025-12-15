@@ -16,7 +16,7 @@ An authenticated attacker can exploit this vulnerability to execute arbitrary SQ
 
 **Summary**:
 
-A Server-Side Template Injection (SSTI) vulnerability exists in the `get_dunning_letter_text` function of Frappe ERPNext 15.70.2.
+A Server-Side Template Injection (SSTI) vulnerability exists in the `get_dunning_letter_text` function of Frappe ERPNext.
 
 The function renders attacker-controlled Jinja2 templates (`body_text`) using `frappe.render_template()` with a user-supplied context (`doc`). Although ERPNext uses a custom Jinja2 `SandboxedEnvironment`, dangerous globals such as `frappe.db.sql` remain accessible via `get_safe_globals()`.
 
