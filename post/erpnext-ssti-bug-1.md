@@ -153,8 +153,8 @@ Save the document.
 
 At this stage, the payload is stored but not yet executed.
 
-`body_text` = {{ frappe.db.sql("SELECT @@version") }}//iamanc
-<img width="2048" height="652" alt="image" src="https://github.com/user-attachments/assets/06a9e8f0-b233-4ed0-82e6-8d699c980a85" />
+`body_text` = \{\{ frappe.db.sql("SELECT @@version") \}\}//iamanc
+<img width="1400" height="400" alt="image" src="https://github.com/user-attachments/assets/06a9e8f0-b233-4ed0-82e6-8d699c980a85" />
 
 **Step 2: Trigger SSTI via UI** 
 
@@ -180,7 +180,7 @@ During execution, the injected payload inside body_text is rendered by:
 
 frappe.render_template(letter_text.body_text, doc)
 
-<img width="1660" height="800" alt="image" src="https://github.com/user-attachments/assets/d99a8a0f-6fd3-461b-ade3-e60e3026568f" />
+<img width="1660" height="400" alt="image" src="https://github.com/user-attachments/assets/d99a8a0f-6fd3-461b-ade3-e60e3026568f" />
 
 
 Observe that:
@@ -204,4 +204,4 @@ POST /api/method/erpnext.accounts.doctype.dunning.dunning.get_dunning_letter_tex
 
 When the API processes the request, the injected `body_text` is rendered and the SSTI payload is executed, returning the evaluated output in the response.
 
-<img width="1500" height="752" alt="image" src="https://github.com/user-attachments/assets/424b198c-89f7-47e1-a378-bf5efd84263b" />
+<img width="1500" height="400" alt="image" src="https://github.com/user-attachments/assets/424b198c-89f7-47e1-a378-bf5efd84263b" />
