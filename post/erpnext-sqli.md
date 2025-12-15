@@ -216,6 +216,7 @@ Inside this function, the injected SQL fragment is concatenated into a raw SQL q
 Although some query parameters use placeholders (%s), the injected condition is not parameterized and is executed directly by the database.
 
 **POC:** 
+
 Request:
 ```php
 POST /api/method/erpnext.accounts.doctype.payment_entry.payment_entry.get_outstanding_reference_documents HTTP/1.1
