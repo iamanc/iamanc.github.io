@@ -7,7 +7,7 @@
 **CVE:  CVE-2025-66439 & CVE-2025-66440.**
 
 **Summary**:
-An issue was discovered in Frappe ERPNext 15.89.0. Function get_outstanding_reference_documents() at erpnext/accounts/doctype/payment_entry/payment_entry.py is vulnerable to SQL Injection. It allows an attacker to extract arbitrary data from the database by injecting SQL payloads via the to_posting_date and from_posting_date parameter, which is directly interpolated into the query without proper sanitization or parameter binding.
+An issue was discovered in Frappe ERPNext 15.89.0. Function get_outstanding_reference_documents() at erpnext/accounts/doctype/payment_entry/payment_entry.py is vulnerable to SQL Injection. It allows an attacker to extract arbitrary data from the database by injecting SQL payloads via the `to_posting_date` and `from_posting_date` parameter, which is directly interpolated into the query without proper sanitization or parameter binding.
 
 **Impact:** 
 An authenticated attacker can exploit this vulnerability to execute arbitrary SQL queries, allowing disclosure of sensitive database contents, including financial records and user-related data. This may lead to further compromise of the ERP system.
