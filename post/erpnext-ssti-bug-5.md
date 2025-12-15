@@ -1,5 +1,3 @@
-<img width="1533" height="673" alt="image" src="https://github.com/user-attachments/assets/4a4acbbe-31fa-4f56-aeb6-d3ddc6ae9507" />**SSTI on ERPNEXT ≤ 15.89.0 (CVE-2025-66438)**
-
 **Exploit Author: An Chu ( aka iamanc )**
 
 **Vendor:** Frappe Technologies Pvt. Ltd.
@@ -189,7 +187,7 @@ Navigate to:
 ```php
 Supplier → SUP-0001
 ```
-
+<img width="1533" height="400" alt="image" src="https://github.com/user-attachments/assets/4a4acbbe-31fa-4f56-aeb6-d3ddc6ae9507" />**SSTI on ERPNEXT ≤ 15.89.0 (CVE-2025-66438)**
 After ERPNext frontend will call API:
 
 ```php
